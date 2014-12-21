@@ -2,6 +2,28 @@
 <html>
 <head>
   {% include header_head.html %}
+  <style>
+    .tags {font-weight:900}
+    .tags ul, ul.categories {
+      margin:0;
+      padding:0;
+      display:inline-block;
+    }
+    .tags li, .categories li {
+      display:inline;
+      font-weight:300;
+      margin:0;
+    }
+    .tags li:after, .categories li:after {
+      content: ','
+    }
+    .tags li:last-child:after, .categories li:last-child:after {
+      content: ''
+    }
+    main .content {
+      padding-bottom:40px;
+    }
+    </style>
 </head>
 <body>
   {% include header.html %}
@@ -9,9 +31,22 @@
     <div class="content">
 
       <h1>{{page.title}}</h1>
-      <p>By {{page.author}} on {{page.date | date: '%d %B, %Y' }} in {{page.tags}}</p>
+      <div>By {{page.author}} on {{page.date | date: '%d %B, %Y' }} in
+        <ul class="categories">
+          {% for category in page.categories %}
+          <li>{{category}}</li>
+          {% endfor %}
+        </ul>
+      </div>
 
       {{ content }}
+
+      <div class="tags">Tags: <ul>
+        {% for tag in page.tags %}
+          <li>{{tag}}</li>
+        {% endfor %}
+      </ul>
+      </div>
 
     </div>
   </main>

@@ -2,7 +2,8 @@
 layout: post
 title: TMT join forces with Colander Associates to deliver new HR course for Architects
 author: Sarah Birkby
-tags:   [Events]
+categories:   [Events]
+tags: [Architecture, HR, Staff Management]
 ---
 
 We are thrilled to announce that Julie Kellett of The Management Team will now be running a new course: Staff Management and HR for the New Architectural Practice for fellow consultants, Colander Associates.

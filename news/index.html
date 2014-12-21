@@ -5,6 +5,23 @@ title: News
 <html>
 <head>
   {% include header_head.html %}
+  <style>
+  ul.categories {
+    margin:0;
+    padding:0;
+    display:inline-block;
+  }
+  .categories li {
+    display:inline;
+    font-weight:300;
+    margin:0;
+  }
+  .categories li:after {
+    content: ','
+  }
+  .categories li:last-child:after {
+    content: ''
+  }  </style>
 </head>
 <body>
   {% include header.html %}
@@ -28,13 +45,19 @@ title: News
         <h3>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h3>
-        <p>
-          By {{post.author}} on {{post.date | date: '%d %B, %Y' }} in {{post.tags}}
-        </p>
+        <div>By {{post.author}} on {{post.date | date: '%d %B, %Y' }} in
+          <ul class="categories">
+            {% for category in post.categories %}
+            <li>{{category}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
         {{ post.excerpt }}
         <p>
           <a href="{{ post.url }}">Keep Reading</a>
         </p>
+
       {% endfor %}
     </div>
   </main>

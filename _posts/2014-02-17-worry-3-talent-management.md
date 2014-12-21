@@ -2,7 +2,8 @@
 layout: post
 title: Worry 3 Talent Management
 author: Sarah Birkby
-tags:   [HR]
+categories:   [HR]
+tags: [Personal Development Plans, Talent Management]
 ---
 
 The Problem:

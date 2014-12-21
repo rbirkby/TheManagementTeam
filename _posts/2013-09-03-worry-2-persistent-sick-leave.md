@@ -2,7 +2,8 @@
 layout: post
 title: Worry 2 Persistent Sick Leave
 author: Sarah Birkby
-tags:   [HR]
+categories:   [HR]
+tags: [Policies and Procedures, Sickness]
 ---
 
 The Problem:

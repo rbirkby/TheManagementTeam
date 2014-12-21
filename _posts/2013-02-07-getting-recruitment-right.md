@@ -2,7 +2,8 @@
 layout: post
 title: Getting recruitment right
 author: Sarah Birkby
-tags:   [HR, Management, Marketing]
+categories:   [HR, Management, Marketing]
+tags: [Management]
 ---
 
 We all know that recruitment can be a costly and timely process - that's why it is important to get it right first time.
