@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Worry 3 Talent Management
+title: "Worry #3: Talent Management"
 author: Sarah Birkby
 categories:   [HR]
 tags: [Personal Development Plans, Talent Management]
@@ -8,7 +8,6 @@ tags: [Personal Development Plans, Talent Management]
 
 The Problem:
 ------------
-
 I am a small to medium sized employer with 50 employees. Most of my employees are professional individuals with highly sought after skills.  I am concerned that if I don’t invest in my most talented individuals I may lose them to the competition.  What do I do as I don’t want to spend the earth developing a high-tech solution?
 
 The Solution:

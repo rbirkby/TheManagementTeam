@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Worry 1 Avoiding claims of discrimination at recruitment stage
+title: "Worry #1: Avoiding claims of discrimination at recruitment stage"
 author: Sarah Birkby
 categories:   [HR]
 tags: [CV Screening, Recruitment]

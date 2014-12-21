@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Worry 2 Persistent Sick Leave
+title: "Worry #2: Persistent Sick Leave"
 author: Sarah Birkby
 categories:   [HR]
 tags: [Policies and Procedures, Sickness]
@@ -8,7 +8,6 @@ tags: [Policies and Procedures, Sickness]
 
 The Problem:
 -----------
-
 I have an employee who is persistently off sick for short bursts of time with a variety of ailments.  When I speak to them I feel it's genuine, but then one of their colleagues tells me they have seen them in the pub.  What's the best way to address this issue, as when this employee is here, they are my best performer?
 
 The Solution:
