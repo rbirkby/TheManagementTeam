@@ -14,10 +14,16 @@
       font-size:10px;
       background-color:#fff;
     }
-
+    main {
+      overflow:hidden;
+    }
+    header .content {
+      height:100px;
+    }
     header .content, footer .content, main {
       width:880px;
       margin:0 auto;
+      position:relative;
     }
     footer .content {
       padding:50px 0 10px 0;
@@ -30,9 +36,6 @@
     header span a {
       text-decoration:none;
       color:#000;
-    }
-    header span a:hover {
-      color:#FF8800;
     }
     .jumbotron ul {
       background-image:url(office.jpg);
@@ -85,12 +88,14 @@
       padding-top:20px;
       width:878px;
       margin: 0 auto;
+      font-family:"Roboto Condensed";
+      font-weight:100;
     }
     body {
       background-color:#eee;
       margin:0;
-      font-family: "Roboto Condensed";
-      font-weight:100;
+      font-family: "Roboto";
+      font-weight:300;
       font-size:14px;
     }
     .social {
@@ -100,6 +105,53 @@
       color:#555;
     }
     .social a:hover i {
+      color:#FF8800;
+      transition:color 0.2s;
+    }
+    blockquote {
+      width:300px;
+      float:right;
+      margin-top:0 !important;
+      margin-left:40px !important;
+      margin-right:0 !important;
+    }
+    blockquote {
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+      font-size:18px;
+    }
+    blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    blockquote p {
+      display: inline;
+    }
+    nav {
+      position:absolute;
+      right:0;
+      bottom:0;
+    }
+    nav li {
+      display:inline-block;
+      border-right:solid 1px #000;
+      padding:4px;
+    }
+    nav li:last-child {
+      border-right:none;
+    }
+    a {
+      text-decoration:none;
+      transition:color 0.2s;
+    }
+    a:hover {
       color:#FF8800;
     }
   </style>
@@ -116,6 +168,17 @@
       <span>
         <a href="mailto:info@management-team.co.uk">info@management-team.co.uk</a>
       </span>
+
+      <nav>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">How we work</a></li>
+          <li><a href="">Human Resources</a></li>
+          <li><a href="">Business Development</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -128,9 +191,12 @@
     </ul>
   </div>
   <main>
-    <h3>
+    <h2>
       The Management Team (TMT) is a boutique consultancy providing HR, Business Development and Management support to businesses in the Chilterns.
-    </h3>
+    </h2>
+    <blockquote>
+      Thank you Julie for your dedicated time in getting to know Sabio, its brand and culture, which really played a vital role in making this day an amazing success. Often teambuilding days seem to have few practical outcomes you can immediately bring back into the workplace. I can certainly say that thanks to your design and facilitation, that wasn't the case with this one: quick wins were transferred, with the momentum for change still going strong!
+    </blockquote>
     <p>
       Based in Haddenham - a vibrant business community located between Aylesbury and Thame - our business serves clients of all shapes and sizes located in Buckinghamshire, Oxfordshire and right into London.
     </p>
