@@ -1,6 +1,10 @@
+---
+title: About Us
+---
 <!doctype html>
 <html>
 <head>
+  {% include header_head.html %}
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
@@ -12,6 +16,8 @@
 </head>
 <body>
   <main>
+    {% include header.html %}
+
     <div class="content">
 
       <h1>A fresh perspective...</h1>
@@ -22,7 +28,7 @@
     <p>
       The team is led by Julie Kellett and Sarah Birkby.
     </p>
-    
+
       <section>
       <h3>Julie Kellet</h3>
       <img src="julie-kellet.jpg" width="200">
@@ -60,6 +66,7 @@
       </p>
     </section>
     </div>
+    {% include footer.html %}
   </main>
 </body>
 </html>
