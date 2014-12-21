@@ -11,17 +11,27 @@ title: News
   <main>
     <div class="content">
 
-      <h1>News</h1>
+      <h1>Your HR Resources</h1>
 
-      <ul>
-        {% for post in site.posts %}
-        <li>
+      <p>We regularly post our thoughts on how to deal with the common 'people problems' that businesses of all shapes and sizes, face.
+        You'll find these posted to our Worry Wall below. From time to time, we'll also publicise consultancy offers giving you access to specialist HR advice on a first-come, first-served basis.
+      </p>
+      <p>
+      We welcome your queries and do get in touch if you think we can help more.
+      </p>
+
+      {% for post in site.posts %}
+        <h3>
           <a href="{{ post.url }}">{{ post.title }}</a>
-          {{ post.excerpt }}
-        </li>
-        {% endfor %}
-      </ul>
-
+        </h3>
+        <p>
+          By {{post.author}} on {{post.date | date: '%d %B, %Y' }} in {{post.tags}}
+        </p>
+        {{ post.excerpt }}
+        <p>
+          <a href="{{ post.url }}">Keep Reading</a>
+        </p>
+      {% endfor %}
     </div>
   </main>
   {% include footer.html %}
