@@ -5,3 +5,4 @@ TODO
 * robots.txt
 * Logo
 * analytics
+* page titles
