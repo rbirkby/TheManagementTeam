@@ -2,7 +2,8 @@ TODO
 ====
 
 * favicon
-* robots.txt
 * Logo
 * analytics
 * page titles
+* sass
+* define more layouts

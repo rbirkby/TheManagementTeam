@@ -92,7 +92,7 @@ header span {
   position: absolute;
   bottom: 30px;
   text-align: center;
-  background-color: #FF8800;
+  background-color: #ED5100;
   height: 50px;
   line-height:50px;
   right: 0;
@@ -142,7 +142,7 @@ body {
   color:#555;
 }
 .social a:hover i {
-  color:#FF8800;
+  color:#ED5100;
   transition:color 0.2s;
 }
 blockquote {
@@ -194,7 +194,7 @@ a {
   transition:color 0.2s;
 }
 a:hover {
-  color:#FF8800;
+  color:#ED5100;
 }
 h3 {
   text-transform:uppercase;
@@ -204,5 +204,5 @@ h3 {
   font-size:20px;
 }
 h1 i, footer i.copyright {
-  color:#FF8800;
+  color:#ED5100;
 }
