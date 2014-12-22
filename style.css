@@ -19,7 +19,7 @@ header.scrolled {
   height:60px;
 }
 
-header .social, header span {
+header .social, header .email {
   transition:opacity 0.3s;
 }
 
@@ -31,15 +31,30 @@ header.scrolled .social {
   opacity:0
 }
 
-header.scrolled span {
+header.scrolled .email {
   opacity:0;
 }
 
 header a img {
   height:70px;
   transition: height 0.3s;
+  float:left;
 }
 
+#logo {
+  display:block;
+  float:left;
+  width:400px;
+}
+#logo span {
+  display:block;
+  opacity:1;
+  transition: opacity 0.2s;
+}
+
+header.scrolled #logo span {
+  opacity:0;
+}
 header.scrolled a img {
   height:60px;
 }
@@ -65,7 +80,7 @@ header .content, footer .content, main {
 footer .content {
   padding:50px 0 10px 0;
 }
-header span {
+header .email {
   float:right;
   font-size:12px;
   margin-right:10px;
