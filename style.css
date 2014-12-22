@@ -47,6 +47,7 @@ header a img {
   width:400px;
 }
 #logo span {
+  margin-top: 4px;
   display:block;
   opacity:1;
   transition: opacity 0.2s;
