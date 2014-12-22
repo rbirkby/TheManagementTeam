@@ -50,6 +50,7 @@ footer {
 }
 main {
   overflow:hidden;
+  min-height:500px;
 }
 header .content {
   height:100px;
