@@ -102,6 +102,8 @@ header span {
   text-decoration:none;
   transition:background-color 0.5s;
   text-shadow:#777 0 0 1px;
+  font-weight:100;
+
 }
 .jumbotron li a:hover {
   background-color:#C46900;
@@ -124,7 +126,6 @@ header span {
   margin-left: auto;
   margin-right:auto;
   font-family:"Roboto Condensed";
-  font-weight:100;
 }
 body {
   background-color:#eee;
@@ -179,11 +180,15 @@ nav li {
   border-right:solid 1px #000;
   padding:4px;
 }
+nav a {
+  font-weight:100;
+}
 nav li:last-child {
   border-right:none;
 }
 a {
   text-decoration:none;
+  font-weight:bold;
   color:#222;
   transition:color 0.2s;
 }
