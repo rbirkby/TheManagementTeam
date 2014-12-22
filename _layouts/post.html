@@ -31,7 +31,7 @@
     <div class="content">
 
       <h1>{{page.title}}</h1>
-      <div>By {{page.author}} on {{page.date | date: '%d %B, %Y' }} in
+      <div>By <a href="/about-us#sarah-birkby">{{page.author}}</a> on {{page.date | date: '%d %B, %Y' }} in
         <ul class="categories">
           {% for category in page.categories %}
           <li>{{category}}</li>
