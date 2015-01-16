@@ -2,37 +2,14 @@ header {
   height:100px;
   padding:10px 0 0 0;
   background-color:#fff;
-  position:fixed;
   top:0;
   width:100%;
   transition:background-color 180ms linear, height 180ms;
   z-index:1000;
 }
 
-header + * {
-  margin-top:100px;
-}
-
-header.scrolled {
-/*  background-color: rgba(253,251,253,0.9);*/
-  box-shadow: #ccc 0 2px 5px;
-  height:60px;
-}
-
 header .social, header .email {
   transition:opacity 0.3s;
-}
-
-header.scrolled .content {
-  height:60px;
-}
-
-header.scrolled .social {
-  opacity:0
-}
-
-header.scrolled .email {
-  opacity:0;
 }
 
 header a img {
@@ -53,13 +30,6 @@ header a img {
   transition: opacity 0.2s;
 }
 
-header.scrolled #logo span {
-  opacity:0;
-}
-header.scrolled a img {
-  height:60px;
-}
-
 footer {
   font-size:10px;
   background-color:#fff;
@@ -72,12 +42,6 @@ header .content {
   height:100px;
   transition:height 180ms;
 }
-header .content, footer .content, main {
-  width:880px;
-  margin-left:auto;
-  margin-right:auto;
-  position:relative;
-}
 footer .content {
   padding:50px 0 10px 0;
 }
@@ -87,20 +51,19 @@ header .email {
   margin-right:10px;
 }
 .jumbotron ul {
+  padding:0 0 0 0;
   background-image:url(office.jpg);
   background-repeat:no-repeat;
-  height:500px;
-  padding:0;
-  font-size:0;
+  background-size:cover;
+  position:relative;
 }
+
 .jumbotron li {
-  display:inline-block;
-  width:212px;
-  border-right:solid 10px #eee;
-  height:100%;
   position:relative;
   z-index:10;
+  height: 70px;
 }
+
 .jumbotron li:last-child {
   border-right:none;
 }
@@ -139,7 +102,6 @@ header .email {
 }
 .jumbotron {
   padding-top:20px;
-  width:878px;
   margin-left: auto;
   margin-right:auto;
   font-family:"Roboto Condensed";
@@ -162,8 +124,6 @@ body {
   transition:color 0.2s;
 }
 blockquote {
-  width:300px;
-  float:right;
   margin-top:0 !important;
   margin-left:40px !important;
   margin-right:0 !important;
@@ -186,11 +146,6 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
-}
-nav {
-  position:absolute;
-  right:0;
-  bottom:0;
 }
 nav li {
   display:inline-block;
@@ -221,4 +176,84 @@ h3 {
 }
 h1 i, footer i.copyright {
   color:#ED5100;
+}
+
+@media (max-width: 900px) {
+  .jumbotron ul {
+    margin-bottom:300px;
+  }
+  .jumbotron li {
+    position:relative;
+    top:300px;
+  }
+}
+
+@media (min-width: 900px) {
+
+  nav {
+    position:absolute;
+    right:0;
+    bottom:0;
+  }
+  
+  .jumbotron ul {
+    padding-top:0;
+    font-size:0;
+    height:500px;
+  }
+
+  .jumbotron li {
+    display:inline-block;
+    width:212px;
+    border-right:solid 10px #eee;
+    height:100%;
+  }
+
+  .jumbotron {
+    width:878px;
+  }
+
+  blockquote {
+    float:right;
+    width:300px;
+  }
+
+  header .content, footer .content, main {
+    width:880px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+  }
+  header {
+    position:fixed;
+  }
+
+
+  header.scrolled {
+    /*  background-color: rgba(253,251,253,0.9);*/
+    box-shadow: #ccc 0 2px 5px;
+    height:60px;
+  }
+
+  header.scrolled #logo span {
+    opacity:0;
+  }
+  header.scrolled a img {
+    height:60px;
+  }
+
+  header.scrolled .content {
+    height:60px;
+  }
+
+  header.scrolled .social {
+    opacity:0
+  }
+
+  header.scrolled .email {
+    opacity:0;
+  }
+  header + * {
+    margin-top:100px;
+  }
 }
